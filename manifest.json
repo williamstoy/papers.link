@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Papers.Link",
+  "version": "1.0",
+  "permissions": [
+    "<all_urls>",
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "description": "Adds a red border to all webpages matching mozilla.org.",
+
+  "icons": {
+    "48": "icons/papers.link.icon-48.png",
+    "96": "icons/papers.link.icon-96.png"
+  },
+
+  "browser_action":{
+    "default_icon": {
+      "48": "icons/papers.link.icon-48.png",
+      "96": "icons/papers.link.icon-96.png"
+    }
+  },
+
+  "background": {
+    "scripts": ["https://raw.githubusercontent.com/williamstoy/papers.link/master/pdfresolve.js"]
+  }
+}
